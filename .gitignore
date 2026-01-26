@@ -44,3 +44,6 @@ frontend/next-env.d.ts
 #백엔드
 backend/.venv
 backend/weights
+
+# 미니 프로젝트 (참고용, 저장소에서 제외)
+A_TEST/
