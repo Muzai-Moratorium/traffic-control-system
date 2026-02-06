@@ -1,8 +1,93 @@
+// 홈 css //
+
 .container {
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  .maincontainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    .loginbox {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 400px;
+      height: 100vh;
+      transform: translateX(600px);
+      background: #1b263b4d;
+      backdrop-filter: blur(15px);
+      border: none;
+      box-shadow: 0px 0px 5px #415a77;
+      z-index: 10;
+
+      img {
+        width: 300px;
+        height: auto;
+        margin-bottom: 40px;
+        filter: drop-shadow(0 5px 5px #000000);
+      }
+
+      .loginForm {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        width: 300px;
+
+        input {
+          border: none;
+          width: 100%;
+          padding: 15px;
+          background: rgba(255, 255, 255, 0.1);
+          border-radius: 12px;
+          color: #ffffff;
+          font-size: 15px;
+          transition: 0.3s;
+
+          &::placeholder {
+            color: #ffffff74;
+          }
+
+          &:focus {
+            outline: none;
+            box-shadow: 0 0 10px #415a77;
+          }
+        }
+
+        button {
+          width: 100%;
+          padding: 15px;
+          margin-top: 10px;
+          border: none;
+          border-radius: 12px;
+          background: linear-gradient(45deg, #1b263b, #415a77);
+          color: white;
+          font-size: 16px;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.3s;
+          &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 10px #ffffff3a;
+          }
+        }
+      }
+    }
+  }
+  // .logoloop {
+  //   width: 100%;
+  //   height: 100px;
+  //   position: relative;
+  //   overflow: hidden;
+  //   background: transparent;
+  //   color: #ffffff;
+  //   z-index: 100;
+  // }
 }
